@@ -28,10 +28,10 @@ import rppstart.service.FakultetService;
 @RestController //kazemo da jeste restcontroller
 public class FakultetRestController {
 	
-	//metoda za vracanje svih preduzeca iz baze podataka
+	//metoda za vracanje svih fakulteta iz baze podataka
 	//ovo predstavlja dependency of injection koncept -- jer zavisnosti klase/interfejsa FakultetRepository injektovati u neku drugu klasu
 	//sta su zavisnosti klase? -- varijable i metode neke klase i u ovom slucaju nama trebaju sve metode ovog interfejsa FakultetRepository koje je nasledio sve od JpaRepository
-	//zato moramo da injektujemo PreduduzeceREpository u ovu klasu -- Autowired --injektovanje pomocu polja/property-a
+	//zato moramo da injektujemo FakultetRepository u ovu klasu -- Autowired --injektovanje pomocu polja/property-a
 	
 
     @Autowired
